@@ -2,27 +2,32 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Video</title>
+<title>Ma Vidéo</title>
 
 <style>
-body{
-margin:0;
-background:black;
-}
+  /* Page pleine écran avec fond noir */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+  }
 
-video{
-width:100vw;
-height:100vh;
-object-fit:cover;
-}
+  /* La vidéo prend tout l’écran */
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Remplit l’écran sans déformer */
+  }
 </style>
 
 </head>
-
 <body>
 
+<!-- Vidéo qui démarre automatiquement, en sourdine et reste inline sur mobile -->
 <video autoplay muted playsinline>
-<source src="video.mp4" type="video/mp4">
+  <source src="video.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la vidéo.
 </video>
 
 </body>
